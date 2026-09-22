@@ -439,26 +439,11 @@ int main(void)
                 files[i],
 
                 "%.1f,"
-                "%.10f,%.10f,%.3f,"
-                "%.3f,"
-                "%.6f,%.6f,%.6f,"
-                "%.6f,%.6f,%.6f\n",
-
+                "%.10f,%.10f\n",
                 time,
 
                 RAD_TO_DEG(state->lat),
-                RAD_TO_DEG(state->lon),
-                state->alt,
-
-                state->speed,
-
-                RAD_TO_DEG(state->yaw),
-                RAD_TO_DEG(state->pitch),
-                RAD_TO_DEG(state->roll),
-
-                RAD_TO_DEG(state->yaw_rate),
-                RAD_TO_DEG(state->pitch_rate),
-                RAD_TO_DEG(state->roll_rate)
+                RAD_TO_DEG(state->lon)
             );
         }
     }
